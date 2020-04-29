@@ -1,0 +1,36 @@
+{
+	"name": "demo-mojs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "parcel src/index.html --open",
+		"clean": "rm -rf dist/*",
+		"build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+		"build": "npm run clean && npm run build:parcel"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ngocsangyem/demo-mojs.git"
+	},
+	"keywords": [
+		"mojs",
+		"javascript",
+		"html",
+		"css",
+		"animation",
+		"animate"
+	],
+	"author": "ngocsangyem",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ngocsangyem/demo-mojs/issues"
+	},
+	"homepage": "https://github.com/ngocsangyem/demo-mojs#readme",
+	"dependencies": {
+		"@mojs/core": "^0.288.2"
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	}
+}
